@@ -1,0 +1,45 @@
+#Django
+__pycache__
+media
+
+#PyCharm' stuffs
+*.iws /out/
+.idea/
+
+#Packaging
+.Python build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+
+#Unit test
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+coverage.xml
+*.cover
+.hypothesis/
+
+#Virtual Env
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+#MyPy
+.mypy_cache/
