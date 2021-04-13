@@ -22,4 +22,5 @@ This project's goal is to provide a reliable way to manipule the informations on
 - [ ] Customizable index informations by using Django's admin (features, testimonials, counter and so on); 
 - [ ] Tests; 
 - [ ] UUID for media files (it's not really that important while using Django);
-- [ ] Additional blog's pages.
+- [ ] Maybe additional blog's pages; 
+- [ ] CRUD for the models.
