@@ -1,0 +1,27 @@
+{% extends 'core.html' %}
+{% load static %}
+{% block content %}
+    {% include 'header.html' %}
+ <!-- ***** Home Parallax Start ***** -->
+    <section class="mini" id="work-process">
+        <div class="mini-content">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-lg-3 col-lg-6">
+                        <div class="info">
+                            <p></p>
+                            <h1>Ops!</h1>
+                            <p>Error 500: Internal Server Error</p>
+                            <a href="{% url 'index' %}" class="main-button-slider">Return to Main Page</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Mini Box End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Home Parallax End ***** -->
+
+    {% include 'footer.html' %}
+
+{% endblock %}
