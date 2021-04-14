@@ -8,11 +8,11 @@
 [![Python](https://img.shields.io/badge/Built_with-Python-1B8BEF?style=for-the-badge&logo=Python)](https://www.python.org/) &nbsp;
 [![Postgre](https://img.shields.io/badge/Database-PostgreSQL-008FFF?style=for-the-badge&logo=PostgreSQL)](https://www.postgresql.org/) &nbsp;
 ![License](https://img.shields.io/badge/LICENSE-MIT-23BCC1?style=for-the-badge&logo=) 
-[![Req](https://img.shields.io/badge/Requirements-Here-23BCC1?style=for-the-badge&logo=)](https://github.com/daniel-augusto-barbosa/django-softy-pinko/blob/master/requirements.txt)
+ [![Req](https://img.shields.io/badge/Requirements-Here-23BCC1?style=for-the-badge&logo=)](https://github.com/daniel-augusto-barbosa/django-softy-pinko/blob/master/requirements.txt)
 
 ## About
 
-This project's goal is to provide a reliable way to manipule the informations on core page of Softy Pinko HTML directly from Django's Admin, so you could fill the informations in the most pleasent way for your pourposes. 
+This project's goal is to provide a reliable way to manipulete the informations on core page of Softy Pinko HTML directly from Django's Admin, so you could fill the informations in the most pleasent way for your pourposes. 
 
 ## Features | Goals
 
