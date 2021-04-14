@@ -12,7 +12,7 @@
 
 ## About
 
-This project's goal is to provide a reliable way to manipulete the informations on core page of Softy Pinko HTML directly from Django's Admin, so you could fill the informations in the most pleasent way for your pourposes. 
+This project's goal is to provide a reliable way to manipulate the informations on core page of Softy Pinko HTML directly from Django's Admin, so you could fill the informations in the most pleasent way for your pourposes. 
 
 ## Features | Goals
 
