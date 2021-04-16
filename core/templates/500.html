@@ -2,7 +2,41 @@
 {% load static %}
 {% block content %}
     {% include 'header.html' %}
- <!-- ***** Home Parallax Start ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">
+                            <img src="{% static 'images/logo.png' %}" alt="Softy Pinko"/>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="{% url 'index' %}" class="active">Home</a></li>
+                            <li><a href="{% url 'index' %}">About</a></li>
+                            <li><a href="{% url 'index' %}">Work Process</a></li>
+                            <li><a href="{% url 'index' %}">Testimonials</a></li>
+                            <li><a href="{% url 'index' %}">Pricing Tables</a></li>
+                            <li><a href="{% url 'index' %}">Blog Entries</a></li>
+                            <li><a href="{% url 'index' %}">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Home Parallax Start ***** -->
     <section class="mini" id="work-process">
         <div class="mini-content">
             <div class="container">
