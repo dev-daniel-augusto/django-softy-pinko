@@ -34,7 +34,7 @@ class FeatureSmall(Base):
 
 class FeatureBig(Base):
     feature_title = models.CharField('Name', max_length=60)
-    feature_desc = models.CharField('Name', max_length=300)
+    feature_desc = models.CharField('Description', max_length=300)
     image = StdImageField('Image', upload_to=refactor_name, default='/static/images/left-image.png',
                           variations={'thumbnail': {'width': 280, 'height': 280, 'crop': True}})
 
