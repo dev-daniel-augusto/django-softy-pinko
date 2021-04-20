@@ -15,48 +15,15 @@
 
                 <!-- ***** Mini Box Start ***** -->
                 <div class="row">
+                    {% for process in work_process %}
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
                         <a href="#" class="mini-box">
-                            <i><img src="{% static 'images/work-process-item-01.png' %}" alt=""></i>
-                            <strong>Get Ideas</strong>
-                            <span>Godard pabst prism fam cliche.</span>
+                            <i><img src="{{ process.image.thumbnail.url }}" alt=""></i>
+                            <strong>{{ process.process_name }}</strong>
+                            <span>{{ process.process_desc }}.</span>
                         </a>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="{% static 'images/work-process-item-01.png' %}" alt=""></i>
-                            <strong>Sketch Up</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="{% static 'images/work-process-item-01.png' %}" alt=""></i>
-                            <strong>Discuss</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="{% static 'images/work-process-item-01.png' %}" alt=""></i>
-                            <strong>Revise</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="{% static 'images/work-process-item-01.png' %}" alt=""></i>
-                            <strong>Approve</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="{% static 'images/work-process-item-01.png' %}" alt=""></i>
-                            <strong>Launch</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
+                    {% endfor %}
                 </div>
                 <!-- ***** Mini Box End ***** -->
             </div>
