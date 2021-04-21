@@ -66,7 +66,7 @@ class WorkProcess(Base):
 class Testimonial(Base):
     author = models.CharField('Author', max_length=50)
     role = models.CharField('Role', max_length=50)
-    opinion = models.CharField('Role', max_length=300)
+    opinion = models.CharField('Opinion', max_length=300)
     image = StdImageField('Image',
                           upload_to=refactor_name,
                           variations={'thumbnail': {'width': 32, 'height': 32, 'crop': True}})
@@ -86,9 +86,6 @@ class Pricing(Base):
 class Counter(Base):
     name = models.CharField('Name', max_length=100)
     number = models.IntegerField('Number')
-    image = StdImageField('Image',
-                          upload_to=refactor_name,
-                          variations={'thumbnail': {'width': 32, 'height': 32, 'crop': True}})
 
     class Meta:
         verbose_name = 'Counter'
