@@ -12,7 +12,7 @@
 
 ## About
 
-This project's goal is to provide a reliable way to manipulate the informations on core page of Softy Pinko HTML directly from Django's Admin, so you could fill the informations in the most pleasent way for your pourposes. 
+This project's goal is to provide a reliable way to manipulate the informations on core page of Softy Pinko HTML directly from Django's Admin, so you could fill the informations in the most pleasent way for your purposes. 
 
 ## Features | Goals
 
@@ -21,6 +21,5 @@ This project's goal is to provide a reliable way to manipulate the informations 
 - [x] Template inheritance;
 - [ ] Customizable index informations by using Django's admin (features, testimonials, counter and so on); 
 - [ ] Tests; 
-- [ ] UUID for media files (it's not really that important while using Django);
-- [ ] Maybe additional blog's pages; 
+- [x] UUID for media files (it's not really that important while using Django);
 - [ ] CRUD for the models.
