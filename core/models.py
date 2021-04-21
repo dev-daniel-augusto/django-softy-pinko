@@ -21,7 +21,8 @@ class Base(models.Model):
 class FeatureSmall(Base):
     feature_title = models.CharField('Feature Name', max_length=30)
     feature_desc = models.CharField('Description', max_length=120)
-    image = StdImageField('Image', upload_to=refactor_name, default='/static/images/featured-item-01.png',
+    image = StdImageField('Image',
+                          upload_to=refactor_name,
                           variations={'thumbnail': {'width': 56, 'height': 48}})
 
     class Meta:
@@ -35,7 +36,8 @@ class FeatureSmall(Base):
 class FeatureBig(Base):
     feature_title = models.CharField('Name', max_length=60)
     feature_desc = models.CharField('Description', max_length=300)
-    image = StdImageField('Image', upload_to=refactor_name, default='/static/images/left-image.png',
+    image = StdImageField('Image',
+                          upload_to=refactor_name,
                           variations={'thumbnail': {'width': 280, 'height': 280, 'crop': True}})
 
     class Meta:
@@ -49,7 +51,8 @@ class FeatureBig(Base):
 class WorkProcess(Base):
     process_name = models.CharField('Process', max_length=30)
     process_desc = models.CharField('Description', max_length=50)
-    image = StdImageField('Image', upload_to=refactor_name, default='/static/images/work-process-item-01.png',
+    image = StdImageField('Image',
+                          upload_to=refactor_name,
                           variations={'thumbnail': {'width': 32, 'height': 32, 'crop': True}})
 
     class Meta:
@@ -64,7 +67,8 @@ class Testimonial(Base):
     author = models.CharField('Author', max_length=50)
     role = models.CharField('Role', max_length=50)
     opinion = models.CharField('Role', max_length=300)
-    image = StdImageField('Image', upload_to=refactor_name, default='/static/images/testimonial-icon.png',
+    image = StdImageField('Image',
+                          upload_to=refactor_name,
                           variations={'thumbnail': {'width': 32, 'height': 32, 'crop': True}})
 
     class Meta:
@@ -82,7 +86,8 @@ class Pricing(Base):
 class Counter(Base):
     name = models.CharField('Name', max_length=100)
     number = models.IntegerField('Number')
-    image = StdImageField('Image', upload_to=refactor_name, default='/static/images/circle-dec.png',
+    image = StdImageField('Image',
+                          upload_to=refactor_name,
                           variations={'thumbnail': {'width': 32, 'height': 32, 'crop': True}})
 
     class Meta:
