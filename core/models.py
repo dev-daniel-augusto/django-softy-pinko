@@ -80,7 +80,23 @@ class Testimonial(Base):
 
 
 class Pricing(Base):
-    pass
+    DURATION_CHOICES = (
+        ('Daily', 'Per day'),
+        ('Weekly', 'Per week'),
+        ('Monthly', 'Per month'),
+        ('Yearly', 'Per year')
+    )
+    name = models.CharField('Name', max_length=50)
+    price = models.DecimalField('Price', decimal_places=2, max_digits=10)
+    currency = models.CharField('Currency', max_length=4, default='$')
+    service_duration = models.CharField('Duration', max_length=7, choices=DURATION_CHOICES)
+    benefits = ArrayField(models.CharField(max_length=40, default=list), size=10)
+
+    class Meta:
+        verbose_name = 'Pricing'
+
+    def __str__(self):
+        return self.name
 
 
 class Counter(Base):

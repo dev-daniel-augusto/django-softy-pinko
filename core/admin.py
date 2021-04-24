@@ -1,10 +1,12 @@
 from django.contrib import admin
-from .models import FeatureSmall, \
-    FeatureBig, \
-    WorkProcess, \
-    Testimonial, \
-    Pricing, \
-    Counter
+from .models import (
+                    FeatureSmall,
+                    FeatureBig,
+                    WorkProcess,
+                    Testimonial,
+                    Pricing,
+                    Counter,
+                    )
 
 
 @admin.register(FeatureSmall)
@@ -25,6 +27,11 @@ class WorkProcessAdmin(admin.ModelAdmin):
 @admin.register(Testimonial)
 class TestimonialAdmin(admin.ModelAdmin):
     list_display = ['author', 'created', 'modified', 'is_live']
+
+
+@admin.register(Pricing)
+class PricingAdmin(admin.ModelAdmin):
+    list_display = ['name', 'price', 'service_duration', 'created', 'modified', 'is_live']
 
 
 @admin.register(Counter)
