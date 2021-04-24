@@ -7,6 +7,21 @@
                 <div class="container">
                     <div class="row">
                         <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+
+                            <!-- ***** E-mail Message Start ***** -->
+                            <div class="container">
+                                {% if messages %}
+                                    {% for message in messages %}
+                                    <div class="alert alert-{{ message.tags }}" align="center">
+                                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                         <span aria-hidden="true">&times;</span></button>
+                                      {{ message }}
+                                    </div>
+                                    {% endfor %}
+                                {% endif %}
+                              </div>
+                            <!-- ***** E-mail Message End ***** -->
+
                             <h1>We provide the best <strong>strategy</strong><br>to grow up your <strong>business</strong></h1>
                             <p>Softy Pinko is a professional Bootstrap 4.0 theme designed by Template Mo
                             for your company at absolutely free of charge</p>
