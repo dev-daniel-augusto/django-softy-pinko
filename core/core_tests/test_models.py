@@ -142,7 +142,3 @@ class CounterTestCase(TestCase):
         self.assertEquals(str(self.object_3), self.object_3.name)
         self.assertEquals(str(self.object_4), self.object_4.name)
         self.assertEquals(str(self.object_5), self.object_5.name)
-
-
-
-
