@@ -3,7 +3,6 @@ from django.test import Client
 from django.urls import reverse_lazy
 from string import ascii_letters
 from random import choice, randint
-from core.forms import ContactUsForm
 
 letters = ascii_letters
 
@@ -13,26 +12,26 @@ class IndexViewTestCase(TestCase):
     def setUp(self):
         self.client = Client()
         self.object_1 = {
-            "name": f"{(''.join(choice(letters) for n in range(0, randint(0, 200))))}",
-            "email": f"{(''.join(choice(letters) for n in range(0, randint(0, 190 ))))}@gmail.com",
-            "message": f"{(''.join(choice(letters) for n in range(0, randint(0, 1000))))}"
+            "name": f"{(''.join(choice(letters) for n in range(0, randint(1, 199))))}",
+            "email": f"{(''.join(choice(letters) for n in range(0, randint(1, 189))))}@gmail.com",
+            "message": f"{(''.join(choice(letters) for n in range(0, randint(1, 999))))}"
         }
         self.object_2 = {
-            "name": f"{(''.join(choice(letters) for n in range(0, randint(0, 200))))}",
-            "email": f"{(''.join(choice(letters) for n in range(0, randint(0, 188 ))))}@hotmail.com",
-            "message": f"{(''.join(choice(letters) for n in range(0, randint(0, 1000))))}"
+            "name": f"{(''.join(choice(letters) for n in range(0, randint(1, 199))))}",
+            "email": f"{(''.join(choice(letters) for n in range(0, randint(1, 187))))}@hotmail.com",
+            "message": f"{(''.join(choice(letters) for n in range(0, randint(1, 999))))}"
         }
         self.object_3 = {
-            "name": f"{(''.join(choice(letters) for n in range(0, randint(0, 200))))}",
-            "message": f"{(''.join(choice(letters) for n in range(0, randint(0, 1000))))}"
+            "name": f"{(''.join(choice(letters) for n in range(0, randint(1, 199))))}",
+            "message": f"{(''.join(choice(letters) for n in range(0, randint(1, 999))))}"
         }
         self.object_4 = {
-            "email": f"{(''.join(choice(letters) for n in range(0, randint(0, 188 ))))}@hotmail.com",
-            "message": f"{(''.join(choice(letters) for n in range(0, randint(0, 1000))))}"
+            "email": f"{(''.join(choice(letters) for n in range(0, randint(1, 187))))}@hotmail.com",
+            "message": f"{(''.join(choice(letters) for n in range(0, randint(1, 999))))}"
         }
         self.object_5 = {
-            "name": f"{(''.join(choice(letters) for n in range(0, randint(0, 200))))}",
-            "email": f"{(''.join(choice(letters) for n in range(0, randint(0, 190))))}@gmail.com",
+            "name": f"{(''.join(choice(letters) for n in range(0, randint(1, 199))))}",
+            "email": f"{(''.join(choice(letters) for n in range(0, randint(1, 189))))}@gmail.com",
         }
 
     def test_form_valid(self):
