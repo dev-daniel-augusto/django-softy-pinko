@@ -21,14 +21,14 @@ from Django's Admin, so you could fill the informations in the most pleasant way
 
 ## Features
 
-- **Costumizable** -> Update key sections and informations of your website by using django's admin easily;
+- **Costumizable** -> Easily update key sections and informations of your website by using django's admin;
 - **Additional pages** -> HTTP 404 and 500 errors pages;
 - **Totally responsive website**;
 - **Template inheritance** -> To help you to find sections and informations you wish modifying;
 - **E-mail system** (_please, read Settings section below_);
 - **API** -> This website has an API, so if you business grow up you can use your models data with another application;
 - **Django JET admin** -> new admin style using the terrific [Django JET template](https://github.com/geex-arts/django-jet).
-- **Tests**:
+- **Tests** ->
 
 ![Tests](https://i.imgur.com/bzDY2Jq.png)
 
@@ -36,18 +36,17 @@ from Django's Admin, so you could fill the informations in the most pleasant way
 
 From settings.py there're some configs you'd like to do before running this project:
 
-* **Secret Key**: the project's secret key was commit since the start of the project to provide a full overview of it.
+* **Secret Key**: the project's secret key was commited since the start of the project to provide a full overview of it.
 I'd recommend changing it before running this project, specially in production.
 
 * **Database**: this project was created using PostgreSQL database. This doesn't mean that you won't be able to use MySQL or even the default django's database (SQLite).But be aware of there's a field called _benefits_ from Pricing Model. This field is an array, which uses ArrayField from django.contrib.postgres.fields module. If you are planning to switch database you'll need adapt this field.
 
-Basically you need to connect to your Postgre databse inside of settings.py file before making the migrations.
+Basically the config you need is to connect to your Postgre database within settings.py file before making the migrations.
 
-* **E-mails**: if you have a mail server you can just delete **_EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend_**
-  line from settings.py and use the righ below e-mail configs there (make sure to delete the quotation marks).
+* **E-mails**: if you have a mail server you can just delete **_EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend_**'
+  line from settings.py and use the right below e-mail configs there (make sure to delete the quotation marks).
   
-## How to run the project 
-After setting up your database we can go ahead.
+## How to run the project
 
 You going to need both Python and Virtualenv installed in order to run this project. In fact, Virtualenv is not required, 
 but I'd recommend you having it to keep dependencies required of each project separated.
@@ -56,7 +55,7 @@ Select a directory, open you terminal and create a virtualenv with:
 ```
 virtualenv .env
 ```
-Now you have a virtual enviroment. The next step is active it:
+Now that you have a virtual enviroment the next step is active it:
 ```
 source .env/bin/activate
 ```
